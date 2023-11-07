@@ -1,0 +1,219 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+                            
+\usepackage[english]{babel}
+%\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+    \textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+\usepackage[bottom]{footmisc}
+
+
+%\renewcommand\bibname{New Title}
+
+%\usepackage{biblatex}
+\usepackage{multibib}
+\newcites{jo}{Journals}
+\newcites{co}{Conferences}
+
+
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\sectionfont{%                      % Change font of \section command
+    \usefont{OT1}{phv}{b}{n}%       % bch-b-n: CharterBT-Bold font
+    \sectionrule{0pt}{0pt}{-5pt}{3pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}          % Box to align text
+
+
+
+\newcommand{\MyName}[1]{ % Name
+        \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+        \par \normalsize \normalfont}
+        
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+ 
+
+%\newgeometry{left=2.5cm, right=2.5cm, top=2.0cm, bottom=2.5cm}	% Change the margins, standard
+\newgeometry{left=2cm, right=2cm, top=2.0cm, bottom=2.0cm}	% T
+  
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+%\addbibresource{./Ref/Ref.bib}
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%   \vspace*{-2em}
+%       \includegraphics[width=0.15\textwidth]{photo}
+%\end{wrapfigure}
+
+
+% \huge{\bfseries{
+% Dr. Juan A. Morales-Cordovilla}}
+% \vspace*{0.5cm}
+\begin{center}
+%\huge{\textbf{Dr. Juan Andrés Morales Cordovilla}}
+\Huge \usefont{OT1}{phv}{b}{n}{Dr. Juan Andrés Morales Cordovilla}
+\end{center}
+
+
+% \newcommand{\MyName}[1]{ % Name
+%         \Huge \usefont{OT1}{phv}{b}{n} \hfill #1
+%         \par \normalsize \normalfont}
+
+
+
+%\MyName{Dr. Juan A. Morales-Cordovilla}
+%\MySlogan{Curriculum Vitae}
+
+\vspace*{1em}
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\begin{tabular}{ p{2cm}  p{14cm}}
+\textit{Birth} & {March 31, 1982. Padul (Granada), Spain} \\
+\textit{Mail, web} & {\url{juan.morales.edu@gmail.com}, \url{juancordovilla.github.io/research}} \\
+%\PersonalEntry{Address}{2 Ayuntamiento St., Padul-18640, Spain }
+%\PersonalEntry{Phone}{+34 663 601 793}
+
+
+\end{tabular}
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\begin{tabular}{ p{1.5cm}  p{15cm}}
+  2000-06 &  \textbf{MSc. Electronic Engineering} at the University of Granada (UGR), Spain. 3 year of \textbf{Physics} (``Quantum Physics'', etc.) plus 2 year of specialization. Grade 7.951/10. Master Thesis ``Implementation of a Real-Time (RT) Distributed Speech Recognizer over IP (VoIP)''  published in conference \citeco{Morales06}.\\
+  2007-11 &  \textbf{PhD. Thesis at the UGR}. ``Pitch-based techniques for robust speech recognition'' (UGR) \citejo{Morales11Sift,Morales12}.  Visits to The Speech and Hearing Research Group, Sheffield University (UK) \citeco{Morales11MD,Morales12_CASA}.\\  
+\end{tabular}
+
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Employment and projects}{}
+
+\begin{tabular}{p{1.5cm} p{3.5cm} p{11cm}}
+  2012-14 &  \textbf{Postdoc, TUGraz, Austria} & European project (FP7-ICT-2011-7) on Distant Speech Recognition (DSR) using microphone arrays \citeco{Fuchs13,Morales14_RoomLoc,Schuppler14,Messner15}.\\
+  2015-16 &  \textbf{Postdoc, INRIA, France} & National project (BGD/300-11) on deep Machine Learning (ML) for DSR \citeco{Sivasankaran15,Nathwani17}.\\
+  2016-19 &  \textbf{Postdoc, UGR, Spain} & Project$^1$ (TEC2016-80141-P) on Bioinformatics for protein structure prediction \citeco{Villegas18,Lopez18} \citejo{Morales18}. \\ 
+  2019-Present &  \textbf{Teacher, Public School, Spain} & Junta de Andaluc{\'i}a's secondary and Vocational Training (FP) school on subjects for computer System Administration (sysadmin), Maths and Technology $^2$. \\ \\
+  
+  
+  \end{tabular}
+
+{\footnotesize \noindent  1. I have directly participated in the redaction of this project to get the funding.
+\\ 2. At the same time I keep the research collaboration with UGR \citejo{Villegas20}.}
+
+%%% Teaching
+%%% ------------------------------------------------------------
+\NewPart{University teaching experience}{}
+\begin{itemize}
+ \item More than 300 hours teaching subjects such as ``Digital Signals'' or ``Audio Technologies'' of the Bachelor ``Telecommunications Engineering'' at the UGR. 2009-17.
+ \item Co-advisor of the students MSc. Florian Iglish (TUGraz 2014), BSc. Siddharth Dalmia (INRIA15) \citeco{Sivasankaran15} and PhD. student Francisco Gonzalez-Lopez \citeco{Lopez18} (UGR18).
+\end{itemize}
+
+
+%%% Teaching
+%%% ------------------------------------------------------------
+\NewPart{Merits}{}
+
+\begin{itemize}
+ \item \textit{Award:} for the best journal student paper \citejo{Morales11Sift} (1500 Euros) by the RTTH (Spanish national network on speech technologies). 2011.
+  \item \textit{Challenges:} our speech recognition system \citeco{Sivasankaran15} was ranked 4 out of 26 participants on the international CHIME3 challenge. 2015.
+ \item \textit{ANECA}: Assistant professor. 2015.
+  \item \textit{Examiner:} of the Pablo C. Molero's PhD. Thesis ``Classification and Separation Techniques based on Fundamental Frequency for Speech Enhancement''. University of Ja\'en (Spain). 2016.
+ \item \textit{Reviewer:} of journals (IEEE Signal Processing 2016, Speech Communication16, IEEJ Trans. Journal14) and conferences (ICASSP14 and Interspeech16-17). 
+ \item \textit{Competition exams}: for teacher civil servant in Maths (2021) and Computer Science (2023). They are high technical and we only passed the first part around 25\%.
+ \item Courses and projects: on Robotics, Bioinformatics, Languages, etc.. (every year). 
+ 
+ \end{itemize}
+
+
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+
+\noindent Related to the IFMIF-DONES project:
+\begin{itemize}
+ \item Expert level: \textsc{Matlab, C/C++ and Python} (employed in many papers and prototypes, see my web).
+ \item Intermediate: sysadmin in networks and OS (as FP teacher). 
+ \item Beginner: FPGA \textsc{Matlab HDL Coder, VIVADO Xilinx, ALTERA MAX+PLUSII} (in my MSc. subjects e.g. ``Algorithms Implementation''). 
+ \item Beginner: SCADA (but advance in RT web speech/graphical based user interfaces).
+\end{itemize}
+
+\noindent Software tools (at least at mid-level):
+\begin{itemize} 
+ \item Hardware: \textsc{OrCAD-PSPICE, Proteus-PCB, Tinkercad-Arduino}, etc. (electronic design tools). 
+ \item OS: \textsc{Linux-Bash, Windows-PowerShell}, \textsc{PBS} (cluster/grid scheduler).
+ \item Languages: \textsc{Matlab} (e.g. GPU for ML), \textsc{C/C++} (concurrent, RT, OOP), \textsc{Python} (theano, pytorch), \textsc{Java} (processing),  \textsc{Mathematica}, \textsc{Fortran}, \textsc{Haskell} (category theory), \textsc{Lean} (formal verification), \textsc{LabVIEW, Scratch}, \textsc{VSCode} (IDEs). 
+ \item Web and mobile:  \textsc{HTML/CSS, JavaScript (P5JS), PHP} (IoT), and \textsc{App Inventor}.
+ \item Databases: \textsc{SQL, PhpMyAdmin}.
+ \item Networks: optical fiber, routers, Cisco Packet Tracer, \textsc{XAMMP} server, socket, IoT, security, etc. 
+ \item Others: \textsc{Git(Hub)}, \LaTeX. \textsc{ChatGPT, WordPress, Moodle, Google} (forms, classroom)
+\end{itemize}
+
+\noindent Others:
+\begin{itemize}
+ \item Languages: Spanish (mother tongue), English (B2 certificate from EOI), German (B1 from EOI), French (begginer).
+ \item Music: guitar, saxophone, singing, etc.
+\end{itemize}
+
+
+%%% References
+%%% ------------------------------------------------------------
+\NewPart{Selected publications}{}
+
+%\printbibliography[title={Main References}]
+
+\bibliographystylejo{unsrt}
+\bibliographyjo{./Ref/Ref}
+\bibliographystyleco{unsrt}
+\bibliographyco{./Ref/Ref}
+
+
+
+
+\end{document}

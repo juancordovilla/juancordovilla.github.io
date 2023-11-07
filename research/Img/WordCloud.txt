@@ -1,0 +1,79 @@
+
+***** https://www.freewordcloudgenerator.com/generatewordcloud ******
+
+
+Signal Processing: Deep neural networks; Uncertainty and missing data; Distant automatic speech recognition (ASR); Noise and reverberation; Computational auditory scene analysis (CASA); Signal processing; Pitch (fundamental period); Voice activity detection (VAD); Microphone array; Speaker localization.
+Bioinformatics: Protein structure prediction; Protein protein interaction (PPI); Alignment; Machine learning.
+Others: Algorithmic information theory; Category theory; Formal verification; Web aplications; IoT; Robotics; Physics.
+
+Feature Extraction Based on Pitch-Synchronous
+Averaging for Robust Speech Recognition
+Acoustic noise, autocorrelation-based mel frequency cepstral coefficient (AMFCC), autocorrelation estimation,
+pitch-synchronous analysis, robust speech recognition.
+
+
+On the Use of Asymmetric Windows for Robust Speech Recognition
+Robust speech recognition · Feature extraction · Autocorrelation · OSA ·
+HASE · DDR Asymmetric window · Pitch
+
+Protein alignment based on higher order
+conditional random fields for template-based
+modeling
+
+Protein Fold Recognition from Sequences using Convolutional and
+Recurrent Neural Networks
+Protein Fold Recognition, Deep Learning, Convolutional Neural Networks, Recurrent Neural
+Networks, Embedding Learning, Random Forests
+
+Implementation of a real-time DSR (Distributed Speech Recognizer) over IP (VoIP)
+
+A PITCH BASED NOISE ESTIMATION TECHNIQUE FOR ROBUST SPEECH
+RECOGNITION WITH MISSING DATA
+Robust speech recognition, missing data, noise
+estimation, VAD, harmonic tunnelling.
+
+A Robust Pitch Extractor Based on DTW Lines
+and CASA with Application in Noisy Speech
+Recognition
+ pitch extractor, pitch line, CASA, DTW, noise, robust speech
+recognition.
+
+ASR FOR ELECTRO-LARYNGEAL SPEECH
+ Automatic Speech Recognition (ASR), electro-
+larynx (EL), speech enhancement, MLLR adaptation
+
+Room Localization for Distant Speech Recognition
+Distant speech recognition; microphone net-
+work; VAD; room localization; machine learning classification;
+enhancement; reverberant and noisy environmen
+
+GRASS: The Graz Corpus of Read and Spontaneous Speech
+Austrian German, Read Speech, Conversational Speech
+
+ADAPTIVE DIFFERENTIAL MICROPHONE ARRAYS USED AS A FRONT-END FOR AN
+AUTOMATIC SPEECH RECOGNITION SYSTEM
+ beamforming, differential microphone arrays
+(DMAs), automatic speech recognition (ASR), microelectromechanical systems (MEMS) microphones
+
+ROBUST ASR USING NEURAL NETWORK BASED SPEECH ENHANCEMENT AND
+FEATURE SIMULATION
+ ASR, speech enhancement, feature simu-
+lation, DNN, CRBM, CHiME-3.
+
+AN EXTENDED EXPERIMENTAL INVESTIGATION OF DNN UNCERTAINTY
+PROPAGATION FOR NOISE ROBUST ASR
+ Robust ASR, acoustic modeling, DNN, uncer-
+tainty estimation, uncertainty propagation.
+
+Improved Protein Residue–Residue Contact
+Prediction Using Image Denoising Methods
+Protein Contact Map, Evolutionary Coupling,
+Image Denoising, Sparse Representations, Dictionary Learning,
+Deep Convolutional Neural Networks, Residual Learning
+
+End-to-end prediction of protein-protein interaction
+based on embedding and recurrent neural networks
+protein-protein interaction, deep neural net-
+work, recurrent neural network, embedding
+
+

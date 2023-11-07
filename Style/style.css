@@ -1,4 +1,6 @@
+
 @charset "utf-8";
+
 
 body {
   font-family: verdana, arial, sans-serif;
@@ -33,6 +35,6 @@ a:hover {
   margin: 20;
   padding: 0;
   opacity: 0.1;
-
 }
+
 
